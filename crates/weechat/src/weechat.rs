@@ -280,7 +280,7 @@ impl Weechat {
         let msg = LossyCString::new(msg);
 
         unsafe {
-            printf_datetime_tags(ptr::null_mut(), 0, ptr::null(), fmt.as_ptr(), msg.as_ptr());
+            printf_datetime_tags(ptr::null_mut(), 0, 0, ptr::null(), fmt.as_ptr(), msg.as_ptr());
         }
     }
 
